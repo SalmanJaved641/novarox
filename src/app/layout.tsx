@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <NextTopLoader />
+        <NextTopLoader color="#FF5A1F" />
         <ThemeProvider
           attribute="class"
           enableSystem={true}

@@ -11,7 +11,7 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-32 bg-black">
+    <section id="faq" className="py-32 bg-darkmode">
       <div className="container mx-auto max-w-4xl px-4">
         <div className="text-center mb-20" data-aos="fade-up">
           <div className="inline-flex items-center gap-3 px-6 py-2 bg-white/5 rounded-full border border-white/10 mb-8">
@@ -27,7 +27,7 @@ const FAQ = () => {
           <h2 className="text-5xl md:text-7xl font-black text-white leading-tight uppercase tracking-tighter mb-6">
             Common <span className="text-primary italic">Questions.</span>
           </h2>
-          <p className="text-xl text-gray-400 font-medium max-w-2xl mx-auto">
+          <p className="text-xl text-grey font-medium max-w-2xl mx-auto">
             Everything you need to know about our digital marketing services and
             how we help your business grow.
           </p>
@@ -57,8 +57,8 @@ const FAQ = () => {
                 <div
                   className={`w-10 h-10 rounded-full border border-white/10 flex items-center justify-center transition-transform duration-500 ${
                     openIndex === index
-                      ? "rotate-180 bg-primary border-primary text-white"
-                      : "text-gray-500"
+                      ? "rotate-180 bg-primary border-primary text-darkmode"
+                      : "text-grey"
                   }`}
                 >
                   <Icon icon="solar:alt-arrow-down-bold" width="20" />
@@ -71,7 +71,7 @@ const FAQ = () => {
                     : "max-h-0 opacity-0"
                 } overflow-hidden`}
               >
-                <div className="p-8 pt-0 text-lg text-gray-400 font-medium leading-relaxed border-t border-white/5 mt-4">
+                <div className="p-8 pt-0 text-lg text-grey font-medium leading-relaxed border-t border-white/5 mt-4">
                   {faq.answer}
                 </div>
               </div>

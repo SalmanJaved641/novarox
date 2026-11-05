@@ -58,7 +58,7 @@ const Header: React.FC = () => {
     >
       <div
         className={`glass-card flex items-center justify-between px-8 py-4 transition-all duration-500 ${
-          sticky ? "bg-black/80" : "bg-black/40"
+          sticky ? "bg-darkmode/80" : "bg-darkmode/40"
         }`}
       >
         <Logo />
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-6">
           <Link
             href="/contact"
-            className="hidden sm:inline-block px-8 py-3 bg-white text-black rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 transition-all"
+            className="hidden sm:inline-block px-8 py-3 bg-primary text-darkmode rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(255,90,31,0.35)] transition-all"
           >
             Let's Talk
           </Link>
@@ -104,12 +104,12 @@ const Header: React.FC = () => {
         </div>
       </div>
       {navbarOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black/95 z-40" />
+        <div className="fixed top-0 left-0 w-full h-full bg-darkmode/95 z-40" />
       )}
 
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-black dark:bg-black shadow-lg transform transition-transform duration-300 max-w-xs ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-darkmode dark:bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${
           navbarOpen ? "translate-x-0" : "translate-x-full"
         } z-50`}
       >
@@ -145,7 +145,7 @@ const Header: React.FC = () => {
           <div className="mt-6 flex flex-col gap-4 w-full">
             <Link
               href="/contact"
-              className="bg-white text-black px-6 py-3 rounded-full font-bold hover:scale-105 transition-all"
+              className="bg-primary text-darkmode px-6 py-3 rounded-full font-bold hover:scale-105 hover:bg-primary-hover transition-all"
               onClick={() => {
                 setNavbarOpen(false);
               }}

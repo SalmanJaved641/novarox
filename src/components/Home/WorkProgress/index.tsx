@@ -18,7 +18,7 @@ const Progresswork = ({ isColorMode }: { isColorMode: Boolean }) => {
   }, []);
 
   return (
-    <section className="bg-black py-32" id="about">
+    <section className="bg-darkmode py-32" id="about">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="space-y-10" data-aos="fade-right">
@@ -31,12 +31,12 @@ const Progresswork = ({ isColorMode }: { isColorMode: Boolean }) => {
 
             <h2 className="text-5xl md:text-7xl font-black text-white leading-[1.1] tracking-tighter uppercase">
               Measurable <br />
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent italic">
+              <span className="bg-gradient-to-r from-primary via-accent-mid to-accent-light bg-clip-text text-transparent italic">
                 Excellence.
               </span>
             </h2>
 
-            <p className="text-xl text-gray-400 font-medium leading-relaxed max-w-xl">
+            <p className="text-xl text-grey font-medium leading-relaxed max-w-xl">
               We translate complex data into clear growth trajectories. Our
               performance metrics speak louder than words.
             </p>
@@ -54,7 +54,7 @@ const Progresswork = ({ isColorMode }: { isColorMode: Boolean }) => {
                   </div>
                   <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-primary rounded-full transition-all duration-1000 ease-out shadow-[0_0_20px_rgba(99,102,241,0.5)]"
+                      className="h-full bg-primary rounded-full transition-all duration-1000 ease-out shadow-[0_0_20px_rgba(255,90,31,0.5)]"
                       style={{ width: `${item.Progress}%` }}
                     ></div>
                   </div>

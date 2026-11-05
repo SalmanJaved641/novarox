@@ -40,14 +40,14 @@ const Newsletter = () => {
     };
 
     return (
-        <section className="bg-primary py-12">
+        <section className="bg-darklight py-12">
             <div className="container mx-auto max-w-6xl px-4">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                     <div className="md:w-1/2" data-aos="fade-right">
                         <h2 className="text-3xl font-bold text-white mb-2">
                             Stay Updated with Marketing Trends
                         </h2>
-                        <p className="text-white/80 text-lg">
+                        <p className="text-grey text-lg">
                             Get the latest insights on Meta & Google Ads directly in your inbox. No spam, just value.
                         </p>
                     </div>
@@ -64,7 +64,7 @@ const Newsletter = () => {
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className="bg-midnight_text text-white px-8 py-4 rounded-lg font-bold hover:bg-black transition-colors disabled:opacity-50"
+                                className="bg-primary text-darkmode px-8 py-4 rounded-lg font-bold hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(255,90,31,0.35)] transition-colors disabled:opacity-50"
                             >
                                 {loading ? 'Subscribing...' : 'Subscribe Now'}
                             </button>

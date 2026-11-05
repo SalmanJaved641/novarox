@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react'
 
 const Counter = ({ isColorMode }: { isColorMode: Boolean }) => {
   return (
-    <section className="bg-black py-20">
+    <section className="bg-darkmode py-20">
       <div className='container mx-auto max-w-7xl px-4'>
         <div className='glass-card p-12 flex flex-wrap items-center md:justify-between justify-center md:gap-0 gap-12'>
           {count.map((item, index) => (
@@ -20,7 +20,7 @@ const Counter = ({ isColorMode }: { isColorMode: Boolean }) => {
               <span className='text-5xl md:text-6xl font-black text-white tracking-tighter'>
                 {item.value}
               </span>
-              <p className='text-sm font-bold text-gray-500 uppercase tracking-widest'>
+              <p className='text-sm font-bold text-grey uppercase tracking-widest'>
                 {item.description}
               </p>
             </div>

@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 const Testimonial = () => {
   return (
-    <section className="bg-black py-32" id="testimonials">
+    <section className="bg-darkmode py-32" id="testimonials">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="glass-card p-12 md:p-24 relative overflow-hidden text-center">
           <div className="relative z-10 space-y-12">
@@ -24,14 +24,14 @@ const Testimonial = () => {
               <strong className="text-2xl font-black text-white uppercase tracking-widest">
                 Sarah Jenkins
               </strong>
-              <p className="text-lg font-bold text-gray-500 uppercase tracking-[0.2em]">
+              <p className="text-lg font-bold text-grey uppercase tracking-[0.2em]">
                 Marketing Director, TechFlow Solutions
               </p>
             </div>
           </div>
 
           {/* Background Glow */}
-          <div className="glow-blob top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-secondary/10"></div>
+          <div className="glow-blob top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/10"></div>
         </div>
       </div>
     </section>

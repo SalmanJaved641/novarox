@@ -222,7 +222,7 @@ export default async function Post({ params }: Props) {
                           placeholder="Email address "
                           className="p-3 dark:bg-transparent border border-border dark:border-dark_border rounded-lg mb-2 w-full focus:outline-0 dark:focus:border-primary focus:border-primary"
                         />
-                        <button className="w-full py-4 px-9 text-lg font-medium bg-primary hover:bg-blue-700 rounded-lg text-white">
+                        <button className="w-full py-4 px-9 text-lg font-medium bg-primary hover:bg-primary-hover rounded-lg text-darkmode">
                           Subscribe
                         </button>
                       </div>

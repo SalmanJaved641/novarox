@@ -28,7 +28,7 @@ const PortfolioDetail = () => {
               </div>
             </div>
             <div
-              className='flex flex-col items-start bg-white shadow-[0px_20px_80px_0px_#68758D26] pt-10 lg:pl-14 pl-9 pb-8 lg:pr-40 pr-10 lg:w-[30%] w-full dark:bg-darklight'
+              className='flex flex-col items-start bg-white shadow-[0px_20px_80px_0px_rgba(16,16,16,0.35)] pt-10 lg:pl-14 pl-9 pb-8 lg:pr-40 pr-10 lg:w-[30%] w-full dark:bg-darklight'
               data-aos='fade-left'
               data-aos-delay='200'
               data-aos-duration='1000'>

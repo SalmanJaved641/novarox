@@ -16,7 +16,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
     <Link href={item.href} className="relative block w-full">
       <button
         onClick={item.submenu ? handleToggle : undefined}
-        className={`flex items-center justify-between w-full py-3 px-4 text-white rounded-lg hover:bg-white/10 transition-colors ${path === item.href ? 'bg-white/20 text-white' : ''} ${path.startsWith("/blog") && item.href==="/blog" ? 'bg-white/20 text-white' : ''} ${path.startsWith("/portfolio") && item.href==="/portfolio" ? 'bg-white/20 text-white' : ''}`}
+        className={`flex items-center justify-between w-full py-3 px-4 text-white rounded-lg hover:bg-white/10 transition-colors ${path === item.href ? 'bg-primary/10 text-primary' : ''} ${path.startsWith("/blog") && item.href==="/blog" ? 'bg-primary/10 text-primary' : ''} ${path.startsWith("/portfolio") && item.href==="/portfolio" ? 'bg-primary/10 text-primary' : ''}`}
       >
         {item.label}
         {item.submenu && (
@@ -28,7 +28,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       {submenuOpen && item.submenu && (
         <div className="bg-white/5 p-2 w-full rounded-lg mt-2">
           {item.submenu.map((subItem, index) => (
-            <Link key={index} href={subItem.href} className="block py-3 px-4 text-gray-300 hover:bg-white/10 rounded-lg transition-colors">
+            <Link key={index} href={subItem.href} className="block py-3 px-4 text-grey hover:bg-white/10 hover:text-primary rounded-lg transition-colors">
               {subItem.label}
             </Link>
           ))}

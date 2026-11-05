@@ -7,7 +7,7 @@
   --container-screen-2xl: 83.75rem;
 
   --shadow-service: 0px 3px 20px 0px #8e9ca90d;
-  --shadow-deatail_shadow: 0px 20px 80px 0px #68758d26;
+  --shadow-deatail_shadow: 0px 20px 80px 0px rgba(16, 16, 16, 0.35);
   --shadow-dark-md:
     rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
@@ -41,17 +41,20 @@
   --z-index-2: 2;
   --z-index-999: 999;
 
-  --color-primary: #6366f1;
-  --color-secondary: #a855f7;
+  --color-primary: #ff5a1f;
+  --color-primary-hover: #e94b17;
+  --color-secondary: #a3a3a3;
+  --color-accent-mid: #ff8a50;
+  --color-accent-light: #ffb08a;
   --color-midnight_text: #ffffff;
-  --color-grey: #94a3b8;
+  --color-grey: #a3a3a3;
   --color-border: rgba(255, 255, 255, 0.1);
   --color-success: #22c55e;
-  --color-section: #0a0a0a;
-  --color-darkmode: #000000;
-  --color-darklight: #171717;
+  --color-section: #101010;
+  --color-darkmode: #101010;
+  --color-darklight: #222222;
   --color-dark_border: rgba(255, 255, 255, 0.05);
-  --color-Sky-blue-mist: rgba(99, 102, 241, 0.1);
+  --color-Sky-blue-mist: rgba(255, 90, 31, 0.1);
 
   --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
@@ -80,7 +83,7 @@
 }
 
 @utility glass-card {
-  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-glass rounded-[2rem] transition-all duration-300 hover:bg-white/10;
+  @apply bg-darklight/90 backdrop-blur-xl border border-white/10 shadow-glass rounded-[2rem] transition-all duration-300 hover:bg-darklight;
 }
 
 @utility glow-blob {
@@ -111,7 +114,7 @@ html {
 }
 
 body {
-  @apply overflow-x-hidden;
+  @apply overflow-x-hidden bg-darkmode text-grey;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -135,6 +138,7 @@ body {
 
   /* Improve paragraph readability */
   p {
+    @apply text-grey;
     line-height: 1.7;
   }
 }
@@ -151,7 +155,7 @@ body {
   @apply opacity-100! text-primary! w-4! h-4!;
 }
 .slick-dots li button:before {
-  @apply text-base! text-[#BBC8D5]! opacity-100!;
+  @apply text-base! text-grey! opacity-100!;
 }
 
 .blog-details p,

@@ -31,12 +31,12 @@ const ServiceDetail = async ({
   }
 
   return (
-    <div className="bg-black py-24 md:py-40 relative overflow-hidden min-h-screen">
+    <div className="bg-darkmode py-24 md:py-40 relative overflow-hidden min-h-screen">
       {/* Background Blobs */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div className="glow-blob top-[-10%] left-[-10%] w-[50%] h-[50%] bg-indigo-600/20"></div>
+        <div className="glow-blob top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/20"></div>
         <div
-          className="glow-blob bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-600/20"
+          className="glow-blob bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-accent-mid/20"
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
@@ -45,7 +45,7 @@ const ServiceDetail = async ({
         <div className="flex items-center gap-4 mb-12">
           <Link
             href="/services"
-            className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group font-bold uppercase tracking-widest text-xs"
+            className="flex items-center gap-2 text-grey hover:text-white transition-colors group font-bold uppercase tracking-widest text-xs"
           >
             <Icon
               icon="mdi:arrow-left"
@@ -73,8 +73,8 @@ const ServiceDetail = async ({
               <h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tight uppercase">
                 {service.title}
               </h1>
-              <div className="h-1.5 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
-              <p className="text-xl text-gray-400 font-medium leading-relaxed italic">
+              <div className="h-1.5 w-24 bg-gradient-to-r from-primary via-accent-mid to-accent-light rounded-full"></div>
+              <p className="text-xl text-grey font-medium leading-relaxed italic">
                 {service.description}
               </p>
             </div>
@@ -93,10 +93,10 @@ const ServiceDetail = async ({
                   "Expert team with years of experience in digital growth and scalability.",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-4 items-start group">
-                    <div className="w-6 h-6 rounded-full bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center shrink-0 mt-1 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                    <div className="w-6 h-6 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 mt-1 group-hover:bg-primary group-hover:text-darkmode transition-all">
                       <Icon icon="mdi:check-circle" width="14" />
                     </div>
-                    <span className="text-gray-400 font-medium leading-relaxed group-hover:text-gray-300 transition-colors">
+                    <span className="text-grey font-medium leading-relaxed group-hover:text-white/80 transition-colors">
                       {item}
                     </span>
                   </li>
@@ -105,21 +105,21 @@ const ServiceDetail = async ({
             </div>
 
             <div className="glass-card p-10 bg-white/5 border-white/10 flex flex-col items-center text-center justify-center space-y-8">
-              <div className="w-20 h-20 rounded-3xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+              <div className="w-20 h-20 rounded-3xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                 <Icon icon="mdi:star-face" width="40" />
               </div>
               <div className="space-y-3">
                 <h4 className="text-2xl font-black text-white uppercase">
                   Ready to Scale?
                 </h4>
-                <p className="text-gray-400 font-medium">
+                <p className="text-grey font-medium">
                   Partner with Novaroxe and experience the future of digital
                   marketing.
                 </p>
               </div>
               <Link
                 href="/contact"
-                className="w-full py-5 bg-white text-black rounded-2xl font-black text-lg hover:scale-105 active:scale-95 transition-all shadow-[0_0_50px_rgba(255,255,255,0.2)]"
+                className="w-full py-5 bg-primary text-darkmode rounded-2xl font-black text-lg hover:scale-105 hover:bg-primary-hover active:scale-95 transition-all shadow-[0_0_50px_rgba(255,90,31,0.25)]"
               >
                 Get Started Now
               </Link>

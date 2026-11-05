@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section className="bg-black py-32" id="services">
+    <section className="bg-darkmode py-32" id="services">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl space-y-6">
@@ -17,7 +17,7 @@ const Services = () => {
               Expertise <br />
               <span className="text-primary">Redefined.</span>
             </h2>
-            <p className="text-xl text-gray-400 font-medium">
+            <p className="text-xl text-grey font-medium">
               We don't just provide services; we engineer growth engines for the
               digital age.
             </p>
@@ -28,7 +28,7 @@ const Services = () => {
             data-aos="fade-left"
           >
             View All Services
-            <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-primary group-hover:bg-primary transition-all">
+            <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-primary group-hover:bg-primary group-hover:text-darkmode transition-all">
               <Icon icon="mdi:arrow-top-right" width="24" />
             </div>
           </Link>
@@ -40,7 +40,7 @@ const Services = () => {
             <Link
               href={`/services/${item.slug}`}
               key={index}
-              className="group glass-card overflow-hidden flex flex-col h-full transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(99,102,241,0.2)]"
+              className="group glass-card overflow-hidden flex flex-col h-full transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(255,90,31,0.2)]"
               data-aos="fade-up"
               data-aos-delay={index * 50}
               data-aos-once="true"
@@ -77,7 +77,7 @@ const Services = () => {
                   <h3 className="text-2xl font-black text-white uppercase tracking-tight group-hover:text-primary transition-colors leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 text-sm font-medium leading-relaxed line-clamp-3">
+                  <p className="text-grey text-sm font-medium leading-relaxed line-clamp-3">
                     {item.description}
                   </p>
                 </div>
@@ -87,7 +87,7 @@ const Services = () => {
                     {item.features.slice(0, 3).map((feature, fIndex) => (
                       <li
                         key={fIndex}
-                        className="flex items-center gap-3 text-[10px] font-bold text-gray-500 uppercase tracking-widest"
+                        className="flex items-center gap-3 text-[10px] font-bold text-grey uppercase tracking-widest"
                       >
                         <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors"></div>
                         {feature}

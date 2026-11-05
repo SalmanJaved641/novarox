@@ -169,7 +169,7 @@ const ContactForm = () => {
                 <div className='mx-0 my-2.5 w-full'>
                   <button
                     disabled={loading}
-                    className='bg-primary rounded-lg text-white py-4 px-8 mt-4 inline-block hover:bg-blue-700 disabled:opacity-50'
+                    className='bg-primary rounded-lg text-darkmode py-4 px-8 mt-4 inline-block hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(255,90,31,0.35)] disabled:opacity-50'
                     type='submit'>
                     {loading ? 'Processing...' : 'Make an appointment'}
                   </button>

@@ -15,7 +15,7 @@ const HeroSub: FC<HeroSubProps> = ({ title, description, breadcrumbLinks }) => {
         <h2 className='dark:text-white md:text-[40px] leading-tight text-4xl font-bold text-midnight_text'>
           {title}
         </h2>
-        <p className='md:text-xl text-lg text-grey dark:text-white/50 font-normal max-w-45 w-full mx-auto my-[1.875rem] sm:px-0 px-4'>
+        <p className='md:text-xl text-lg text-grey font-normal max-w-45 w-full mx-auto my-[1.875rem] sm:px-0 px-4'>
           {description}
         </p>
         <Breadcrumb links={breadcrumbLinks} />

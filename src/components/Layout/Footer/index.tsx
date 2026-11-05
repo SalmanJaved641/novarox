@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-black py-24 border-t border-white/5 relative z-1">
+    <footer className="bg-darkmode py-24 border-t border-white/5 relative z-1">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="flex flex-col items-center text-center space-y-12">
           <Logo />
@@ -15,7 +15,7 @@ const Footer: FC = () => {
               <Link
                 key={index}
                 href={item.href}
-                className="text-sm font-bold uppercase tracking-widest text-gray-500 hover:text-white transition-all"
+                className="text-sm font-bold uppercase tracking-widest text-grey hover:text-primary transition-all"
               >
                 {item.label}
               </Link>
@@ -59,20 +59,20 @@ const Footer: FC = () => {
           </div>
 
           <div className="pt-12 border-t border-white/5 w-full flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-gray-600 text-sm font-medium">
+            <p className="text-grey text-sm font-medium">
               © {new Date().getFullYear()} Novarox. Engineering the future of
               digital marketing.
             </p>
             <div className="flex gap-8">
               <Link
                 href="#"
-                className="text-gray-600 text-sm hover:text-white transition-all"
+                className="text-grey text-sm hover:text-primary transition-all"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="#"
-                className="text-gray-600 text-sm hover:text-white transition-all"
+                className="text-grey text-sm hover:text-primary transition-all"
               >
                 Terms of Service
               </Link>

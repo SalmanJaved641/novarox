@@ -55,7 +55,7 @@ const Contactform = () => {
   };
 
   return (
-    <section className="overflow-x-hidden bg-black py-32">
+    <section className="overflow-x-hidden bg-darkmode py-32">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="space-y-10" data-aos="fade-right">
@@ -68,18 +68,18 @@ const Contactform = () => {
 
             <h2 className="text-5xl md:text-7xl font-black text-white leading-[1.1] tracking-tighter uppercase">
               Let's build <br />
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent italic">
+              <span className="bg-gradient-to-r from-primary via-accent-mid to-accent-light bg-clip-text text-transparent italic">
                 Something Great.
               </span>
             </h2>
 
             <div className="space-y-8 pt-6">
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-darkmode transition-all">
                   <Icon icon="mdi:phone" width="24" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">
+                  <p className="text-xs font-bold text-grey uppercase tracking-widest">
                     Phone
                   </p>
                   <p className="text-xl font-bold text-white">
@@ -88,11 +88,11 @@ const Contactform = () => {
                 </div>
               </div>
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-darkmode transition-all">
                   <Icon icon="mdi:email" width="24" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">
+                  <p className="text-xs font-bold text-grey uppercase tracking-widest">
                     Email
                   </p>
                   <p className="text-xl font-bold text-white">
@@ -101,11 +101,11 @@ const Contactform = () => {
                 </div>
               </div>
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-darkmode transition-all">
                   <Icon icon="solar:map-point-bold" width="24" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">
+                  <p className="text-xs font-bold text-grey uppercase tracking-widest">
                     Location
                   </p>
                   <p className="text-xl font-bold text-white">
@@ -123,7 +123,7 @@ const Contactform = () => {
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-2">
-                  <label className="text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">
+                  <label className="text-xs font-bold text-grey uppercase tracking-widest ml-1">
                     First Name
                   </label>
                   <input
@@ -137,7 +137,7 @@ const Contactform = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">
+                  <label className="text-xs font-bold text-grey uppercase tracking-widest ml-1">
                     Last Name
                   </label>
                   <input
@@ -152,7 +152,7 @@ const Contactform = () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">
+                <label className="text-xs font-bold text-grey uppercase tracking-widest ml-1">
                   Email Address
                 </label>
                 <input
@@ -166,7 +166,7 @@ const Contactform = () => {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">
+                <label className="text-xs font-bold text-grey uppercase tracking-widest ml-1">
                   Message
                 </label>
                 <textarea
@@ -182,7 +182,7 @@ const Contactform = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-6 bg-white text-black rounded-full font-black text-xl uppercase tracking-widest hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 shadow-[0_0_50px_rgba(255,255,255,0.1)]"
+                className="w-full py-6 bg-primary text-darkmode rounded-full font-black text-xl uppercase tracking-widest hover:scale-[1.02] hover:bg-primary-hover active:scale-[0.98] transition-all disabled:opacity-50 shadow-[0_0_50px_rgba(255,90,31,0.25)]"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
