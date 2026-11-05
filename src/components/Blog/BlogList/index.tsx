@@ -9,7 +9,7 @@ const BlogList: React.FC = () => {
     <section
       className='flex flex-wrap justify-center pt-8 md:pb-24 pb-16 dark:bg-darkmode'
       id='blog'>
-      <div className='container mx-auto  max-w-6xl'>
+      <div className='site-container max-w-6xl'>
         <div className='grid grid-cols-12 gap-7'>
           {posts.map((blog, i) => (
             <div

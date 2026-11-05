@@ -15,7 +15,7 @@ const Services = ({ variant = "all" }: ServicesProps) => {
 
   return (
     <section className="bg-darkmode py-20 md:py-24" id="services">
-      <div className="container mx-auto max-w-7xl px-4">
+      <div className="site-container max-w-7xl">
         <div className="flex flex-col md:flex-row items-end justify-between mb-12 md:mb-16 gap-8">
           <div className="max-w-2xl space-y-6">
             <h2

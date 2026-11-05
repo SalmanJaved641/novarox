@@ -5,7 +5,7 @@ const ContactInfo = () => {
   return (
     <>
       <section className="dark:bg-darkmode pt-8 md:pb-24 pb-16">
-        <div className="container mx-auto max-w-6xl px-4">
+        <div className="site-container max-w-6xl">
           <div className="flex md:flex-row flex-col md:items-center items-start justify-center md:gap-28 gap-8">
             <div className="flex sm:flex-row flex-col items-start sm:gap-8 gap-4">
               <div className="bg-primary/20 w-3.75 h-3.75 flex items-center justify-center rounded-full">

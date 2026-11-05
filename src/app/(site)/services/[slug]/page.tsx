@@ -21,7 +21,7 @@ const ServiceDetail = async ({
 
   if (!service) {
     return (
-      <div className="container mx-auto py-40 text-center">
+      <div className="site-container max-w-5xl py-40 text-center">
         <h1 className="text-4xl font-bold">Service Not Found</h1>
         <Link href="/services" className="text-primary mt-4 inline-block">
           Back to Services
@@ -41,7 +41,7 @@ const ServiceDetail = async ({
         ></div>
       </div>
 
-      <div className="container mx-auto max-w-5xl px-4 relative z-10">
+      <div className="site-container max-w-5xl relative z-10">
         <div className="flex items-center gap-4 mb-12">
           <Link
             href="/services"

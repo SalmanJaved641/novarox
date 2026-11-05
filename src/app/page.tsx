@@ -5,7 +5,6 @@ import Counter from "@/components/Home/Counter";
 import Progresswork from "@/components/Home/WorkProgress";
 import Services from "@/components/Home/Services";
 import Portfolio from "@/components/SharedComponent/portfollio";
-import Testimonial from "@/components/SharedComponent/Testimonial";
 import Blog from "@/components/SharedComponent/Blog";
 import FAQ from "@/components/Home/FAQ";
 import Newsletter from "@/components/Layout/Newsletter";
@@ -22,7 +21,6 @@ export default function Home() {
       <Services variant="home" />
       {/* <Blog /> */}
       <Progresswork isColorMode={false} />
-      <Testimonial />
       <Portfolio />
       <FAQ />
       {/* <Newsletter /> */}

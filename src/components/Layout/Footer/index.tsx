@@ -7,7 +7,7 @@ import { Icon } from "@iconify/react";
 const Footer: FC = () => {
   return (
     <footer className="bg-darkmode py-24 border-t border-white/5 relative z-1">
-      <div className="container mx-auto max-w-7xl px-4">
+      <div className="site-container max-w-7xl">
         <div className="flex flex-col items-center text-center space-y-12">
           <Logo />
           <nav className="flex flex-wrap justify-center gap-10">

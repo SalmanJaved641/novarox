@@ -4,7 +4,7 @@ const PortfolioDetail = () => {
   return (
     <>
       <section className='md:py-24 py-16 dark:bg-darkmode'>
-        <div className='container mx-auto max-w-6xl'>
+        <div className='site-container max-w-6xl'>
           <div className='flex md:flex-row flex-col items-start w-full justify-between flex-wrap sm:flex-nowrap lg:gap-0 gap-8'>
             <div className='lg:w-[60%] w-full'>
               <div className='pb-[3.625rem]'>

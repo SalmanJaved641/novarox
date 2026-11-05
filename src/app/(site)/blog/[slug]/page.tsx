@@ -83,9 +83,9 @@ export default async function Post({ params }: Props) {
   return (
     <>
       <section className=" relative pt-44 dark:bg-darkmode">
-        <div className="container max-w-6xl mx-auto">
+        <div className="site-container max-w-6xl">
           <div className="grid md:grid-cols-12 grid-cols-1 items-center">
-            <div className="col-span-8">
+            <div className="md:col-span-8">
               <div className="flex flex-col sm:flex-row">
                 <span className="text-base text-midnight_text font-medium dark:text-white pr-7 border-r border-solid border-grey dark:border-white w-fit">
                   {format(new Date(post.date), "dd MMM yyyy")}
@@ -98,7 +98,7 @@ export default async function Post({ params }: Props) {
                 {post.title}
               </h2>
             </div>
-            <div className="flex items-center md:justify-center justify-start gap-6 col-span-4 pt-4 md:pt-0">
+            <div className="flex items-center md:justify-center justify-start gap-6 md:col-span-4 pt-4 md:pt-0">
               <Image
                 src={post.authorImage}
                 alt="image"
@@ -118,7 +118,7 @@ export default async function Post({ params }: Props) {
         </div>
       </section>
       <section className="pb-10 pt-14 dark:bg-darkmode lg:pb-20">
-        <div className="container max-w-6xl mx-auto">
+        <div className="site-container max-w-6xl">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4">
               <div className="z-20 mb-16 overflow-hidden rounded-sm">

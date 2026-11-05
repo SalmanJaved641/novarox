@@ -12,7 +12,7 @@ const FAQ = () => {
 
   return (
     <section id="faq" className="py-32 bg-darkmode">
-      <div className="container mx-auto max-w-4xl px-4">
+      <div className="site-container max-w-4xl">
         <div className="text-center mb-20" data-aos="fade-up">
           <div className="inline-flex items-center gap-3 px-6 py-2 bg-white/5 rounded-full border border-white/10 mb-8">
             <Icon
@@ -45,7 +45,7 @@ const FAQ = () => {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-8 text-left transition-all"
+                className="w-full flex items-center justify-between p-5 sm:p-8 text-left transition-all"
               >
                 <span
                   className={`text-xl md:text-2xl font-bold uppercase tracking-tight transition-colors duration-300 ${
@@ -71,7 +71,7 @@ const FAQ = () => {
                     : "max-h-0 opacity-0"
                 } overflow-hidden`}
               >
-                <div className="p-8 pt-0 text-lg text-grey font-medium leading-relaxed border-t border-white/5 mt-4">
+                <div className="p-5 pt-0 sm:p-8 sm:pt-0 text-lg text-grey font-medium leading-relaxed border-t border-white/5 mt-4">
                   {faq.answer}
                 </div>
               </div>

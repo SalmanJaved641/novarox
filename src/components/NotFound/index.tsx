@@ -5,7 +5,7 @@ import Link from "next/link";
 const NotFound = () => {
   return (
     <section className="bg-white pt-8 pb-20 dark:bg-darkmode">
-      <div className="container mx-auto">
+      <div className="site-container max-w-7xl">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 md:w-5/12 lg:w-6/12">
             <div className="relative mx-auto aspect-129/138 max-w-[357px] text-center">
@@ -28,6 +28,7 @@ const NotFound = () => {
                   viewBox="0 0 327 132"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="w-full h-auto max-w-full"
                 >
                   <mask
                     id="path-1-outside-1_2014_12631"

@@ -55,8 +55,8 @@ const Contactform = () => {
   };
 
   return (
-    <section className="overflow-x-hidden bg-darkmode py-32">
-      <div className="container mx-auto max-w-7xl px-4">
+    <section className="bg-darkmode py-32">
+      <div className="site-container max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="space-y-10" data-aos="fade-right">
             <div className="inline-flex items-center gap-3 px-6 py-2 bg-white/5 rounded-full border border-white/10">
@@ -117,7 +117,7 @@ const Contactform = () => {
           </div>
 
           <div
-            className="glass-card p-10 md:p-16 relative"
+            className="glass-card p-6 sm:p-10 md:p-16 relative overflow-hidden"
             data-aos="fade-left"
           >
             <form onSubmit={handleSubmit} className="space-y-8">

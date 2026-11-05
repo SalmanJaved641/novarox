@@ -4,7 +4,7 @@ import PortfolioCard from "@/components/SharedComponent/portfollio/Portfolio-car
 const Portfolio = () => {
   return (
     <section id="portfolio" className="dark:bg-darkmode">
-      <div className="text-center lg:px-0 px-8">
+      <div className="text-center site-container max-w-7xl">
         <div
           className="flex gap-2 items-center justify-center"
           data-aos="fade-right"

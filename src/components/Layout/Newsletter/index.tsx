@@ -41,7 +41,7 @@ const Newsletter = () => {
 
     return (
         <section className="bg-darklight py-12">
-            <div className="container mx-auto max-w-6xl px-4">
+            <div className="site-container max-w-6xl">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                     <div className="md:w-1/2" data-aos="fade-right">
                         <h2 className="text-3xl font-bold text-white mb-2">

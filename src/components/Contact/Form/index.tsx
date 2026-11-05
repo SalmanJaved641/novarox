@@ -56,9 +56,9 @@ const ContactForm = () => {
   return (
     <>
       <section className='dark:bg-darkmode md:pb-24 pb-16'>
-        <div className='container mx-auto max-w-6xl px-4'>
+        <div className='site-container max-w-6xl'>
           <div className='grid md:grid-cols-12 grid-cols-1 gap-8'>
-            <div className='col-span-6'>
+            <div className='md:col-span-6'>
               <h2 className='max-w-72 text-[40px] leading-tight font-bold mb-9 text-midnight_text dark:text-white'>
                 Get Online Consultation
               </h2>
@@ -176,7 +176,7 @@ const ContactForm = () => {
                 </div>
               </form>
             </div>
-            <div className='col-span-6'>
+            <div className='md:col-span-6'>
               <Image
                 src='/images/contact-page/contact.jpg'
                 alt='Contact'

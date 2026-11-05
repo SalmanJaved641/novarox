@@ -23,7 +23,7 @@ const Portfolios = async ({ params }: { params: Promise<{ slug: string }> }) => 
   return (
     <>
       <section className='md:pt-44 pt-36 md:py-24 py-16 dark:bg-darkmode'>
-        <div className='container mx-auto max-w-6xl'>
+        <div className='site-container max-w-6xl'>
           <div className='branding_heading'>
             <h2
               className='text-4xl font-bold text-midnight_text pb-5 dark:text-white'

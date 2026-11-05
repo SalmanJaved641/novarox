@@ -52,7 +52,7 @@ const PortfolioCard = () => {
 
   return (
     <div id='portfolio' className='dark:bg-darkmode'>
-      <div className='lg:px-9 m-auto px-0 max-w-[1600px] slider-container'>
+      <div className='site-container max-w-[100rem] slider-container'>
         <Slider {...settings}>
           {portfolioinfo.map((item, index) => (
             <Link key={index} href={`/portfolio/${item.slug}`} passHref>

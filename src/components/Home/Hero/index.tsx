@@ -15,7 +15,7 @@ const Hero = () => {
         ></div>
       </div>
 
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-20">
+      <div className="site-container max-w-7xl relative z-20">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Column: Content */}
           <div
@@ -72,7 +72,7 @@ const Hero = () => {
             </div>
 
             {/* Floating Stat Cards - Adjusted for mobile */}
-            <div className="absolute -top-4 -right-4 glass-card bg-primary/90 p-4 sm:p-6 shadow-2xl animate-float z-20">
+            <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 glass-card bg-primary/90 p-4 sm:p-6 shadow-2xl animate-float z-20">
               <p className="text-2xl sm:text-3xl font-black text-darkmode">98%</p>
               <p className="text-[9px] sm:text-[10px] font-bold text-darkmode/70 uppercase tracking-widest">
                 Client Satisfaction
@@ -81,7 +81,7 @@ const Hero = () => {
 
             {/* Meta Ads Card */}
             <div
-              className="absolute top-[-3%] -left-6 sm:-left-12 glass-card p-3 sm:p-5 shadow-2xl animate-float z-20"
+              className="absolute top-[-3%] -left-1 sm:-left-12 glass-card p-3 sm:p-5 shadow-2xl animate-float z-20"
               style={{ animationDelay: "1s" }}
             >
               <div className="flex items-center gap-2 sm:gap-4">
@@ -101,7 +101,7 @@ const Hero = () => {
 
             {/* Instagram Ads Card */}
             <div
-              className="absolute top-[35%] -left-8 sm:-left-16 glass-card p-3 sm:p-5 shadow-2xl animate-float z-20"
+              className="absolute top-[35%] -left-2 sm:-left-16 glass-card p-3 sm:p-5 shadow-2xl animate-float z-20"
               style={{ animationDelay: "1.5s" }}
             >
               <div className="flex items-center gap-2 sm:gap-4">
@@ -124,7 +124,7 @@ const Hero = () => {
 
             {/* LinkedIn Ads Card */}
             <div
-              className="absolute bottom-[5%] -left-6 sm:-left-10 glass-card p-3 sm:p-5 shadow-2xl animate-float z-20"
+              className="absolute bottom-[5%] -left-1 sm:-left-10 glass-card p-3 sm:p-5 shadow-2xl animate-float z-20"
               style={{ animationDelay: "2.5s" }}
             >
               <div className="flex items-center gap-2 sm:gap-4">
@@ -147,7 +147,7 @@ const Hero = () => {
 
             {/* Google Ads Card */}
             <div
-              className="absolute top-1/2 -right-6 sm:-right-12 glass-card p-4 sm:p-6 shadow-2xl animate-float z-20"
+              className="absolute top-1/2 -right-1 sm:-right-12 glass-card p-4 sm:p-6 shadow-2xl animate-float z-20"
               style={{ animationDelay: "2s" }}
             >
               <div className="flex items-center gap-2 sm:gap-4">

@@ -5,8 +5,8 @@ import { Icon } from "@iconify/react";
 const Testimonial = () => {
   return (
     <section className="bg-darkmode py-32" id="testimonials">
-      <div className="container mx-auto max-w-7xl px-4">
-        <div className="glass-card p-12 md:p-24 relative overflow-hidden text-center">
+      <div className="site-container max-w-7xl">
+        <div className="glass-card p-6 sm:p-12 md:p-24 relative overflow-hidden text-center">
           <div className="relative z-10 space-y-12">
             <div className="flex justify-center">
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary">

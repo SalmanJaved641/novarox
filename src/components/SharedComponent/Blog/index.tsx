@@ -17,7 +17,7 @@ const Blog: React.FC = () => {
     <section
       className='flex flex-wrap justify-center dark:bg-darkmode'
       id='blog'>
-      <div className='container mx-auto max-w-6xl'>
+      <div className='site-container max-w-6xl'>
         <div className='flex items-baseline justify-between flex-wrap'>
           <h2
             className='sm:mb-11 mb-3 text-4xl font-bold text-midnight_text dark:text-white'

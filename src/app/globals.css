@@ -90,6 +90,13 @@
   @apply absolute blur-[120px] rounded-full opacity-30 animate-pulse pointer-events-none;
 }
 
+/* Shared centered container: comfortable gutters on every screen size. */
+.site-container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
 /* Reveal the service card CTA on hover, but keep it visible on touch devices. */
 @media (hover: hover) {
   .service-card-cta {
@@ -152,12 +159,14 @@ body {
   h6 {
     @apply text-white;
     line-height: 1.2;
+    overflow-wrap: break-word;
   }
 
   /* Improve paragraph readability */
   p {
     @apply text-grey;
     line-height: 1.7;
+    overflow-wrap: break-word;
   }
 }
 
