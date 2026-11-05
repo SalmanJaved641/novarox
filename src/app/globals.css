@@ -90,6 +90,24 @@
   @apply absolute blur-[120px] rounded-full opacity-30 animate-pulse pointer-events-none;
 }
 
+/* Reveal the service card CTA on hover, but keep it visible on touch devices. */
+@media (hover: hover) {
+  .service-card-cta {
+    opacity: 0;
+    transform: translateY(0.25rem);
+  }
+  .group:hover .service-card-cta {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-card-cta {
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease;
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still

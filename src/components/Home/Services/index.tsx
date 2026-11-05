@@ -4,11 +4,19 @@ import { Servicebox } from "@/app/api/data";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 
-const Services = () => {
+type ServicesProps = {
+  variant?: "all" | "home";
+};
+
+const Services = ({ variant = "all" }: ServicesProps) => {
+  const isHome = variant === "home";
+  // Home page shows 9 on desktop and 8 on mobile; the 9th is hidden below md.
+  const services = isHome ? Servicebox.slice(0, 9) : Servicebox;
+
   return (
-    <section className="bg-darkmode py-32" id="services">
+    <section className="bg-darkmode py-20 md:py-24" id="services">
       <div className="container mx-auto max-w-7xl px-4">
-        <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
+        <div className="flex flex-col md:flex-row items-end justify-between mb-12 md:mb-16 gap-8">
           <div className="max-w-2xl space-y-6">
             <h2
               className="text-5xl md:text-7xl font-black text-white leading-tight uppercase tracking-tighter"
@@ -34,71 +42,56 @@ const Services = () => {
           </Link>
         </div>
 
-        {/* Grid Layout - Blog Style */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {Servicebox.map((item, index) => (
+        <div
+          className={
+            isHome
+              ? "grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 lg:gap-6"
+              : "grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
+          }
+        >
+          {services.map((item, index) => (
             <Link
               href={`/services/${item.slug}`}
-              key={index}
-              className="group glass-card overflow-hidden flex flex-col h-full transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(255,90,31,0.2)]"
+              key={item.slug}
+              className={`group glass-card flex flex-col h-full overflow-hidden rounded-2xl! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_12px_40px_rgba(255,90,31,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 ${
+                isHome && index === 8 ? "max-md:hidden" : ""
+              }`}
               data-aos="fade-up"
-              data-aos-delay={index * 50}
+              data-aos-delay={(index % 3) * 60}
               data-aos-once="true"
             >
-              {/* Image Container - Blog Like */}
-              <div className="relative aspect-[16/10] overflow-hidden">
+              <div className="relative aspect-[16/9] w-full overflow-hidden">
                 {item.image ? (
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 400px"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 ) : (
                   <div className="w-full h-full bg-primary/10 flex items-center justify-center">
                     <Icon
                       icon="mdi:star"
-                      width="64"
+                      width="48"
                       className="text-primary/20"
                     />
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
-
-                {/* Floating Icon */}
-                <div className="absolute bottom-6 left-6 w-14 h-14 rounded-xl bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center text-white shadow-2xl">
-                  <Icon icon="mdi:web" width="30" />
-                </div>
               </div>
 
-              {/* Content Container */}
-              <div className="p-8 flex-grow flex flex-col space-y-6">
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-black text-white uppercase tracking-tight group-hover:text-primary transition-colors leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="text-grey text-sm font-medium leading-relaxed line-clamp-3">
-                    {item.description}
-                  </p>
-                </div>
+              <div className="p-4 md:p-5 flex flex-1 flex-col gap-2.5">
+                <h3 className="text-sm md:text-base font-black text-white uppercase tracking-tight leading-snug line-clamp-3 md:line-clamp-2 group-hover:text-primary transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-xs md:text-sm text-grey font-medium leading-relaxed line-clamp-2 md:line-clamp-3">
+                  {item.description}
+                </p>
 
-                {item.features && (
-                  <ul className="space-y-3 pt-6 border-t border-white/5 mt-auto">
-                    {item.features.slice(0, 3).map((feature, fIndex) => (
-                      <li
-                        key={fIndex}
-                        className="flex items-center gap-3 text-[10px] font-bold text-grey uppercase tracking-widest"
-                      >
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                <div className="pt-4 flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
-                  View Details <Icon icon="mdi:arrow-right" />
-                </div>
+                <span className="service-card-cta mt-auto inline-flex items-center gap-1.5 pt-2 text-[10px] md:text-xs font-bold uppercase tracking-widest text-primary">
+                  View Details
+                  <Icon icon="mdi:arrow-right" width="14" />
+                </span>
               </div>
             </Link>
           ))}
