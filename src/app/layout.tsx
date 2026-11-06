@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
-import { ThemeProvider } from "next-themes";
 import Aoscompo from "@/utils/aos";
 import NextTopLoader from "nextjs-toploader";
 import { Metadata } from "next";
@@ -30,9 +29,14 @@ export const metadata: Metadata = {
   publisher: "novarox",
   robots: "index, follow",
   icons: {
-    icon: "/logo.jpeg",
-    shortcut: "/logo.jpeg",
-    apple: "/logo.jpeg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 };
 
@@ -42,21 +46,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body className={inter.className}>
         <NextTopLoader color="#FF5A1F" />
-        <ThemeProvider
-          attribute="class"
-          enableSystem={true}
-          defaultTheme="system"
-        >
-          <Aoscompo>
-            <Header />
-            {children}
-            <Footer />
-          </Aoscompo>
-          <WhatsAppFab />
-        </ThemeProvider>
+        <Aoscompo>
+          <Header />
+          {children}
+          <Footer />
+        </Aoscompo>
+        <WhatsAppFab />
       </body>
     </html>
   );

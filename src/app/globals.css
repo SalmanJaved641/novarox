@@ -115,6 +115,14 @@
     transform 300ms ease;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .about-page [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -136,6 +144,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color-scheme: dark;
 }
 
 body {

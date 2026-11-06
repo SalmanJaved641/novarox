@@ -8,7 +8,6 @@ import Portfolio from "@/components/SharedComponent/portfollio";
 import Blog from "@/components/SharedComponent/Blog";
 import FAQ from "@/components/Home/FAQ";
 import Newsletter from "@/components/Layout/Newsletter";
-import Contactform from "@/components/Home/Contact";
 export const metadata: Metadata = {
   title: "novarox | Strategic Digital Marketing Agency",
 };
@@ -24,7 +23,6 @@ export default function Home() {
       <Portfolio />
       <FAQ />
       {/* <Newsletter /> */}
-      <Contactform />
     </main>
   );
 }

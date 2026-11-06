@@ -109,7 +109,7 @@ const Contactform = () => {
                     Location
                   </p>
                   <p className="text-xl font-bold text-white">
-                    Gulnishan Society, Lahore, Pakistan
+                    Lahore, Pakistan
                   </p>
                 </div>
               </div>

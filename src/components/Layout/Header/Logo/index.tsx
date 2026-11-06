@@ -3,17 +3,15 @@ import Image from "next/image";
 
 const Logo: React.FC = () => {
   return (
-    <Link href="/" className="flex items-center gap-2">
-      {/* <Image
-        src="/logo.jpeg"
-        alt="novarox logo"
-        width={40}
-        height={40}
-        className="rounded-lg"
-      /> */}
-      <span className="text-2xl font-bold text-midnight_text dark:text-white">
-        Nova<span className="text-primary">rox</span>
-      </span>
+    <Link href="/" aria-label="NovaroX home" className="flex items-center shrink-0">
+      <Image
+        src="/logo-novarox.png"
+        alt="NovaroX"
+        width={1544}
+        height={606}
+        priority
+        className="h-[44px] sm:h-[55px] w-auto max-w-[175px] object-contain"
+      />
     </Link>
   );
 };

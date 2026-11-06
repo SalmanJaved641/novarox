@@ -1,7 +1,7 @@
-import ContactForm from "@/components/Contact/Form";
-import ContactInfo from "@/components/Contact/ContactInfo";
 import React from "react";
 import HeroSub from "@/components/SharedComponent/HeroSub";
+import ContactOptions from "@/components/Contact/ContactOptions";
+import Contactform from "@/components/Home/Contact";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
@@ -21,8 +21,8 @@ const page = () => {
         description="Ready to scale your brand? Let's talk about your marketing goals and how novarox can help you achieve them."
         breadcrumbLinks={breadcrumbLinks}
       />
-      <ContactInfo />
-      <ContactForm />
+      <ContactOptions />
+      <Contactform />
     </>
   );
 };

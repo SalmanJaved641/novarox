@@ -19,7 +19,7 @@ const Location = () => {
               </div>
               <div className="md:col-span-3">
                 <p className="sm:text-2xl text-xl text-IceBlue font-normal max-w-64 leading-7 text-white/50">
-                  Gulnishan Society, Lahore, Pakistan
+                  Lahore, Pakistan
                 </p>
               </div>
               <div className="md:col-span-3">
